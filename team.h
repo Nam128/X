@@ -4,12 +4,13 @@
 #include <string.h>
 #include <windows.h>
 #include <conio.h>
+
 #define EASY_SIZE 4
 #define EASY_TIME_LIMIT 6
 #define NORMAL_SIZE 5
 #define NORMAL_TIME_LIMIT 4
 #define HARD_SIZE 6
-#define HARD_TIME_LIMIT 2
+#define HARD_TIME_LIMIT 3
 #define MONSTER1 30
 #define MONSTER2 70
 #define MONSTER3 100
@@ -19,6 +20,7 @@ extern int total;
 extern int monsterNum;
 extern int comboMax;
 extern int esc;
+extern int monster3;
 
 enum {
 	black,
@@ -32,3 +34,4 @@ void setColor(int, int);
 int normalMode();
 int easyMode();
 int hardMode();
+int loadingBar();
